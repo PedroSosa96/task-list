@@ -1,0 +1,152 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
+
+body {
+  height: 100vh;
+    margin: 0;
+    font-family: 'Gabarito', cursive;
+    background: linear-gradient(270deg, #95B8F6, #CFDFEC);
+}
+
+#titulo-1 {
+  display: flex;
+  color: white;
+  justify-content: center;
+  font-size: xx-large;
+  font-weight: 700;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+span {
+  color: black;
+}
+
+/* .parrafo-1 { NO VA, ELIMINAR
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  color: white;
+} */
+
+#caja {
+  background-color: cornflowerblue;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  height: 25%;
+  width: 65%;
+}
+
+
+.parrafo-2 {
+  /* background-color: blue; */
+  display: flex;
+  margin: auto;
+  padding: 0.5rem;
+  font-weight: 700;
+  color: white;
+
+}
+
+#formulario {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* margin: 1rem; */
+  padding: 1rem;  
+}
+
+#input {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  /* padding: 1rem; */
+  margin: 0.2rem;
+  /* justify-content: space-between; */
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  margin: 0.2rem;
+  /* padding: 0.2rem; */
+  font-weight: 700;
+}
+
+
+.delete-icon {
+margin-left: 0;
+}
+
+.lista {
+  background-color: cornflowerblue;
+  margin: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1.5rem;
+  min-height: 25%;
+  max-height: 35%;
+  overflow: auto;
+}
+
+.li-row {
+  display: flex;
+}
+
+.no-edit {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.delete-icon, .check-icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+@media (min-width: 768px) {
+  #titulo-1 {
+    font-size: 70px;
+    font-weight: 700;    
+  }
+
+  #caja {
+    font-size: 50px;
+    font-weight: 700;    
+  }
+
+  #formulario {
+    margin: auto;
+    
+  }
+
+  #input {
+  }
+
+  #list {
+    font-size: 50px;
+    justify-content: space-between;
+    text-align: justify;
+  }
+
+
+}
+
